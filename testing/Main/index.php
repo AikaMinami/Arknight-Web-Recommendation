@@ -15,7 +15,7 @@
 
 	<div class="hero">
 		<nav>
-			<h2 class="logo">Ar<span>knight</span></h2>
+			<a href="../admin"><h2 class="logo">Ar<span>knight</span></h2></a>
 			<ul>
 			</ul>
 			<?php
