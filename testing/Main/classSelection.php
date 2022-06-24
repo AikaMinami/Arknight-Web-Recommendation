@@ -39,42 +39,97 @@
 	<!-----service section start----------->
 	<div class="service">
 		<div class="title">
-			<h2>Arknight Operator Recommendation</h2>
+			<h2>Choose The Class</h2>
 		</div>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Recommendation System</h5>
+		    <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Guard</h5>
 				<div class="pra">
-					<p>We calculate the best operator to suits your needs</p>
-
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionGuard.php">Start</a>
+					</p>
 				</div>
 			</div>
 
 			<div class="card">
 				<i class="far fa-user"></i>
-				<h5>Choose the Classes</h5>
+				<h5>Vanguard</h5>
 				<div class="pra">
 					<p></p>
-
 					<p style="text-align: center;">
-						<a class="button" href="classSelection.php">Start</a>
+						<a class="button" href="selection/selectionVanguard.php">Start</a>
 					</p>
 				</div>
 			</div>
 
 			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Method That We Use</h5>
+				<i class="far fa-user"></i>
+				<h5>Defender</h5>
 				<div class="pra">
-					<p>We are using TOPSIS method</p>
-
+					<p></p>
 					<p style="text-align: center;">
-						<a class="button" href="https://en.wikipedia.org/wiki/TOPSIS#:~:text=It%20is%20a%20method%20of,best%20score%20in%20each%20criterion.">Read More</a>
+						<a class="button" href="selection/selectionDefender.php">Start</a>
 					</p>
 				</div>
 			</div>
+
+            <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Specialist</h5>
+				<div class="pra">
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionSpecialist.php">Start</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Sniper</h5>
+				<div class="pra">
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionSniper.php">Start</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Caster</h5>
+				<div class="pra">
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionCaster.php">Start</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Supporter</h5>
+				<div class="pra">
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionSupporter.php">Start</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="card">
+				<i class="far fa-user"></i>
+				<h5>Medic</h5>
+				<div class="pra">
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="selection/selectionMedic.php">Start</a>
+					</p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
