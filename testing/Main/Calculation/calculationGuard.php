@@ -26,9 +26,9 @@ while($row = $result-> fetch_assoc()){
     $cost_D += $cost * $cost;
     $survivability_D += $survivability * $survivability;
 
-    #$sql2 = "INSERT INTO criteria(operatorName, health, dps, cost, survivability)
-    #VALUES ('$name', '$health', '$dps', '$cost', '$survivability')";
-    #mysqli_query($conn, $sql2);
+    $sql2 = "INSERT INTO criteria(operatorName, health, dps, cost, survivability)
+    VALUES ('$name', '$health', '$dps', '$cost', '$survivability')";
+    mysqli_query($conn, $sql2);
 }
 
 $health_W = 25;
@@ -45,9 +45,9 @@ while($row2 = $result2-> fetch_assoc()){
     $dps_N = round(($row2['dps'] / $dps_D * $dps_W),5);
     $cost_N = round(($row2['cost'] / $cost_D * $cost_W),5);
     $survivability_N = round(($row2['survivability'] / $survivability_D * $survivability_W),5);
-#$sql4 = "INSERT INTO normalized(operatorName, health, dps, cost, survivability)
-#VALUES ('$name', '$health_N', '$dps_N', '$cost_N', '$survivability_N')";
-#mysqli_query($conn, $sql4);
+$sql4 = "INSERT INTO normalized(operatorName, health, dps, cost, survivability)
+VALUES ('$name', '$health_N', '$dps_N', '$cost_N', '$survivability_N')";
+mysqli_query($conn, $sql4);
 }
 
 #Negative/Positive Ideal Solution
@@ -128,8 +128,8 @@ while($row6 = $result6->fetch_assoc()){
     $op_FS_V = $op_AD_NIS[$count] / ($op_AD_NIS[$count] + $op_AD_PIS[$count]);
     $name = $row6['operatorName'];
     $count++;
-    #$sql9 = "INSERT INTO final(operatorName, score) VALUES ('$name', '$op_FS_V')";
-    #mysqli_query($conn, $sql9);
+    $sql9 = "INSERT INTO final(operatorName, score) VALUES ('$name', '$op_FS_V')";
+    mysqli_query($conn, $sql9);
 }
 ?>
 
@@ -155,8 +155,6 @@ while($row6 = $result6->fetch_assoc()){
 		<?php }?>
 	</tbody>
 </table>
-
-
 
 <?php
     $sql11 = "DELETE FROM selected";
