@@ -59,7 +59,7 @@
 					<p></p>
 
 					<p style="text-align: center;">
-						<a class="button" href="classSelection.php">Start</a>
+						<a class="button" href="classSelection.php">Choose</a>
 					</p>
 				</div>
 			</div>

@@ -42,6 +42,8 @@
 			<h2>Choose The Class</h2>
 		</div>
 
+		
+		<div class="box">
 		    <div class="card">
 				<i class="far fa-user"></i>
 				<h5>Guard</h5>
@@ -85,7 +87,8 @@
 					</p>
 				</div>
 			</div>
-
+		</div>
+		<div class="box">
             <div class="card">
 				<i class="far fa-user"></i>
 				<h5>Sniper</h5>
@@ -131,6 +134,7 @@
 			</div>
 
 		</div>
+		
 	</div>
 
 
@@ -139,11 +143,11 @@
 		<p>Member:</p>
 		<p>Meuti Zari Annisa - 1941720088 <br>Radithya Iqbal Prasaja - 1941720072 </p>
 		
-		<!-- <div class="social">
+		<div class="social">
 			<a href="#"><i class="fab fa-facebook-f"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
 			<a href="#"><i class="fab fa-dribbble"></i></a>
-		</div> -->
+		</div> 
 		<p class="end">This template is copy right by Tahmid Ahmed</p>
 	</footer>
 </body>

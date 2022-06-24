@@ -132,6 +132,10 @@ while($row6 = $result6->fetch_assoc()){
     #mysqli_query($conn, $sql9);
 }
 ?>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <table border="1">
 	<thead>
 		<tr>
@@ -151,6 +155,8 @@ while($row6 = $result6->fetch_assoc()){
 		<?php }?>
 	</tbody>
 </table>
+
+
 
 <?php
     $sql11 = "DELETE FROM selected";

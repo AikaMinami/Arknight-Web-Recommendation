@@ -11,8 +11,12 @@ $options = "";
         $options = $options."<option value = $operators[1] name=operatorid>$operators[1]</option>";
     }        
 ?>
-<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<br><br><br>
+
+<div class="selectioning" style="margin-left: 50px;">
 <form action="selectedop.php" method="POST">
     <select id= "operatorid" name= "operatorid">
         <option> --Select an Operator-- </option>
@@ -24,6 +28,8 @@ $options = "";
     </select>
     <input type="submit" id="insert" value="Submit"></td>
 </form>
+</div>
+<div class = "users table">
 <table border="1">
 	<thead>
 		<tr>
@@ -54,5 +60,11 @@ $options = "";
 		<?php }?>
 	</tbody>
 </table>
+</div>
 <br>
+<div class="main">
 <a class= "button" href="../calculation/calculationSniper.php">Proceed to calculation</a>
+</div>
+<div class="main">
+    <a class= "button" href="../index.php" style="font-weight:bold">Back to Home</a>
+</div>
