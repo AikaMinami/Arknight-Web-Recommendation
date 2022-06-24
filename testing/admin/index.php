@@ -26,6 +26,14 @@ if($_SESSION['admins'] == 1 ){
         <a href="#" class="logo">
           <span class="nav-item">Admin</span>
         </a>
+        <li><a href="../main">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Homepage</span>
+        </a></li>
+        <li><a href="list.php">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Operator List</span>
+        </a></li>
         <li><a href="../login/logout.php">
           <i class="fas fa-sign-out-alt"></i>
           <span class="nav-item">Logout</span>

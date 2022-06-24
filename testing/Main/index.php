@@ -15,7 +15,7 @@
 
 	<div class="hero">
 		<nav>
-			<h2 class="logo">Ar<span>knight</span></h2>
+			<a href="../admin"><h2 class="logo">Ar<span>knight</span></h2></a>
 			<ul>
 			</ul>
 			<?php
@@ -45,19 +45,20 @@
 		<div class="box">
 			<div class="card">
 				<i class="fas fa-bars"></i>
-				<h5>Recommendation System</h5>
+				<h5>Self-Research</h5>
 				<div class="pra">
-					<p>We calculate the best operator to suits your needs</p>
-
+					<p></p>
+					<p style="text-align: center;">
+						<a class="button" href="userData.php">Start</a>
+					</p>
 				</div>
 			</div>
 
 			<div class="card">
 				<i class="far fa-user"></i>
-				<h5>Choose the Classes</h5>
+				<h5>Classes</h5>
 				<div class="pra">
 					<p></p>
-
 					<p style="text-align: center;">
 						<a class="button" href="classSelection.php">Choose</a>
 					</p>
