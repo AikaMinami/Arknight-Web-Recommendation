@@ -39,7 +39,7 @@
 	<!-----service section start----------->
 	<div class="service">
 		<div class="title">
-			<h2>Our Services</h2>
+			<h2>Arknight Operator Recommendation</h2>
 		</div>
 
 		<div class="box">
@@ -66,34 +66,30 @@
 
 			<div class="card">
 				<i class="far fa-bell"></i>
-				<h5>Web Development</h5>
+				<h5>Method That We Use</h5>
 				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+					<p>We are using TOPSIS method</p>
 
 					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+						<a class="button" href="https://en.wikipedia.org/wiki/TOPSIS#:~:text=It%20is%20a%20method%20of,best%20score%20in%20each%20criterion.">Read More</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!------Contact Me------>
-	<div class="contact-me">
-		<p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
-	</div>
 
 	<!------footer start--------->
 	<footer>
-		<p>Tahmid Ahmed</p>
-		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
-		<div class="social">
+		<p>Member:</p>
+		<p>Meuti Zari Annisa - 1941720088 <br>Radithya Iqbal Prasaja - 1941720072 </p>
+		
+		<!-- <div class="social">
 			<a href="#"><i class="fab fa-facebook-f"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
 			<a href="#"><i class="fab fa-dribbble"></i></a>
-		</div>
-		<p class="end">CopyRight By Tahmid Ahmed</p>
+		</div> -->
+		<p class="end">This template is copy right by Tahmid Ahmed</p>
 	</footer>
 </body>
 </html>
