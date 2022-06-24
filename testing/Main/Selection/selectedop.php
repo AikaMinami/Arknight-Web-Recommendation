@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php';
+include '../../login/config.php';
 $opName = $_POST['operatorid'];
 $newReport = "INSERT INTO selected(operatorName, maximumHP, attackPower, attackTime, defense, magicResistance, deploymentCost) 
 SELECT operatorName, maximumHP, attackPower, attackTime, defense, magicResistance, deploymentCost FROM operator WHERE operatorName = '" . $opName . "'";
@@ -8,9 +8,7 @@ SELECT operatorName, maximumHP, attackPower, attackTime, defense, magicResistanc
 if (mysqli_query($conn,$newReport))
 
 	{
-		echo "<script>alert('Success')
-				location.href = 'selection.php?attempt=success';
-				</script>";
+		header('Location: '.$_SERVER['HTTP_REFERER']);
 	}
 	else
 	{

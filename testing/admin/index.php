@@ -76,6 +76,21 @@ if($_SESSION['admins'] == 1 ){
                 <td><input type="number" name="deploymentCost" required></td>
             </tr>
             <tr>
+              <td> Classes: </td>
+              <td>
+                <select id= "classes" name= "classes">
+                  <option> --Select Operator Classes-- </option>
+                  <option value="1">Vanguard</option>
+                  <option value="2">Guard</option>
+                  <option value="3">Defender</option>
+                  <option value="4">Specialist</option>
+                  <option value="5">Sniper</option>
+                  <option value="6">Caster</option>
+                  <option value="7">Supporter</option>
+                  <option value="8">Medic</option>
+                </td>
+            </tr>
+            <tr>
               <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
             </table>
