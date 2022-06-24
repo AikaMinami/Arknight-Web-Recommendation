@@ -15,14 +15,27 @@
 
 	<div class="hero">
 		<nav>
-			<a href="../admin" class="logo"><h2 class="logo">Ar<span>knight</span></h2></a>
+			<a <?php
+			
+			include 'config.php';
+
+			session_start();
+				if(isset($_SESSION['username'])){
+					if($_SESSION['admins'] == 0)
+					{
+						echo 'href="../admin/index.php"';
+					} else if($_SESSION['admins'] == 1)
+					{
+						echo 'href="index.php"';
+					}
+				} else {
+					echo 'href="index.php"';
+				}
+			?> class="logo"><h2 class="logo">Ar<span>knight</span></h2></a>
 			<ul>
 			</ul>
 			<?php
 			
-				include 'config.php';
-
-				session_start();
 				if (isset($_SESSION['username'])) {
 					?> 
 					<a href="../login/logout.php" class="btn">Logout</a>

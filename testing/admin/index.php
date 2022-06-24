@@ -23,13 +23,9 @@ if($_SESSION['admins'] == 1 ){
   <div class="container">
     <nav>
       <ul>
-        <a href="#" class="logo">
+        <a href="../main" class="logo">
           <span class="nav-item">Admin</span>
         </a>
-        <li><a href="../main">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Homepage</span>
-        </a></li>
         <li><a href="list.php">
           <i class="fas fa-sign-out-alt"></i>
           <span class="nav-item">Operator List</span>

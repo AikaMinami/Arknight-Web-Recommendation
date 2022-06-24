@@ -136,6 +136,9 @@ while($row6 = $result6->fetch_assoc()){
 <link rel="stylesheet" type="text/css" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<h1 style="text-align:center">Calculation Result</h1>
+
+<div class="users table">
 <table border="1">
 	<thead>
 		<tr>
@@ -155,6 +158,10 @@ while($row6 = $result6->fetch_assoc()){
 		<?php }?>
 	</tbody>
 </table>
+        </div>
+<div class="main">
+    <a class= "button" href="../index.php" style="font-weight:bold">Back to Home</a>
+</div>
 
 <?php
     $sql11 = "DELETE FROM selected";

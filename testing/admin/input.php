@@ -32,6 +32,7 @@ if (isset($_POST['submit'])) {
                 $stmt->bind_param("siidiiii",$operatorName, $maximumHP, $attackPower, $attackTime, $defense, $magicResistance, $deploymentCost, $classes);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
+                    header('Location:index.php');
                 }
                 else {
                     echo $stmt->error;
