@@ -3,7 +3,7 @@ if (isset($_POST['submit'])) {
     if (isset($_POST['operatorName']) && isset($_POST['maximumHP']) &&
         isset($_POST['attackPower']) && isset($_POST['attackTime']) &&
         isset($_POST['defense']) && isset($_POST['magicResistance'])&&
-        isset($_POST['deploymentCost'])) {
+        isset($_POST['deploymentCost']) && isset($_POST['classes'])) {
         
         $operatorName = $_POST['operatorName'];
         $maximumHP = $_POST['maximumHP'];
@@ -12,6 +12,7 @@ if (isset($_POST['submit'])) {
         $defense = $_POST['defense'];
         $magicResistance = $_POST['magicResistance'];
         $deploymentCost = $_POST['deploymentCost'];
+        $classes = $_POST['classes'];
         $host = "localhost";
         $dbUsername = "root";
         $dbPassword = "";
@@ -21,14 +22,14 @@ if (isset($_POST['submit'])) {
             die('Could not connect to the database.');
         }
         else {
-            $Insert = "INSERT INTO operator(operatorName, maximumHP, attackPower, attackTime, defense, magicResistance, deploymentCost) values(?, ?, ?, ?, ?, ?, ?)";
+            $Insert = "INSERT INTO operator(operatorName, maximumHP, attackPower, attackTime, defense, magicResistance, deploymentCost, classes) values(?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($Insert);
             $stmt->fetch();
             $rnum = $stmt->num_rows;
             if ($rnum == 0) {
                 $stmt->close();
                 $stmt = $conn->prepare($Insert);
-                $stmt->bind_param("siidiii",$operatorName, $maximumHP, $attackPower, $attackTime, $defense, $magicResistance, $deploymentCost);
+                $stmt->bind_param("siidiiii",$operatorName, $maximumHP, $attackPower, $attackTime, $defense, $magicResistance, $deploymentCost, $classes);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
                 }
