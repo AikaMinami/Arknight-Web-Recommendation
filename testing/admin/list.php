@@ -15,23 +15,54 @@
                 <th>Defense</th>
                 <th>Magic Resistance</th>
                 <th>Deployment Cost</th>
+                <th>Class</th>
             </tr>
         <?php
         $conn = mysqli_connect("localhost", "root", "", "datatest");
-        $sql = "SELECT * FROM operator";
+        $sql = "SELECT * FROM operator ORDER BY classes ASC";
         $result = $conn -> query($sql);
 
         if(!$result){
             die( "Invalid Query: " . $connection->error);
         }
+
         while($row = $result-> fetch_assoc()){
+            switch ($row['classes']) {
+                case 1:
+                    $class = "Vanguard";
+                    break;
+                case 2:
+                    $class = "Guard";
+                    break;
+                case 3:
+                    $class = "Defender";
+                    break;
+                case 4:
+                    $class = "Specialist";
+                    break;
+                case 5:
+                    $class = "Sniper";
+                    break;
+                case 6:
+                    $class = "Caster";
+                    break;
+                case 7:
+                    $class = "Supporter";
+                    break;
+                case 8:
+                    $class = "Medic";
+                    break;
+
+            }
+            
             echo "<tr><td>" . $row['operatorName'] . "</td><td>" . 
             $row['maximumHP']       . "</td><td>" . 
             $row['attackPower']     . "</td><td>" . 
             $row['attackTime']      . "</td><td>" . 
             $row['defense']         . "</td><td>" . 
-            $row['magicResistance'] . "</td><td>" . 
-            $row['deploymentCost']  . "</td></tr>";
+            $row['magicResistance'] . "</td><td>" .
+            $row['deploymentCost'] . "</td><td>" .
+            $class  . "</td></tr>";
         }
         $conn -> close();
         ?>
