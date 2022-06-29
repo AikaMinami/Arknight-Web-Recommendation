@@ -86,7 +86,7 @@
 </div>
 
 <div class="main">
-<a class= "button" href="Calculation/calculationSpecialist.php">Proceed to calculation</a>
+<a class= "button" href="userWeight.php">Proceed to calculation</a>
 </div>
 
 <div class="main">
